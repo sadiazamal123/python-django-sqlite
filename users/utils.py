@@ -9,7 +9,7 @@ def paginateProfiles(request, profiles, results):
     paginator = Paginator(profiles, results) 
 
     try:
-        profiles = paginator.page(page)
+        profiles = paginator.page(page) 
     except PageNotAnInteger:
         page = 1
         profiles = paginator.page(page)
