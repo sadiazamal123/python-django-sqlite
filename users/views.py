@@ -144,7 +144,7 @@ def updateSkill(request, pk):
 
 
 def deleteSkill(request, pk):
-    profile = request.user.profile
+    profile = request.user.profile 
     skill = profile.skill_set.get(id=pk)
     if request.method == 'POST':
         skill.delete()
