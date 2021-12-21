@@ -47,7 +47,7 @@ def updateProject(request, pk):
             return redirect('account')
 
     context = {'form': form}
-    return render(request, "projects/project_form.html", context)
+    return render(request, "projects/project_form.html", context) 
 
 @login_required(login_url="login")
 def deleteProject(request, pk):
