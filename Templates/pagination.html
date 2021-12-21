@@ -14,7 +14,7 @@
             <li><a href="?page={{page}}" class="btn page-link" data-page="{{page}}">{{page}}</a></li>
             {% endif %}
             {% endfor %}
-
+ 
             {% if queryset.has_next %}
             <li><a href="?page={{queryset.next_page_number}}" class="btn page-link" data-page="{{queryset.next_page_number}}">Next &#10095;</a></li>
             {% endif %}
