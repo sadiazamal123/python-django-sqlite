@@ -1,0 +1,134 @@
+__________________________Command Prompt (run as administrator)
+python		
+exit()
+cls
+cd desktop		
+cd %userprofile%/desktop       //if cd desktop doesn't work
+pip list	
+pip install virtualenv   //to create virtual environment
+cls
+virtualenv env         //name our virtual enironment as 'env'
+env\scripts\activate    //to activate virtual environment
+pip list
+env\scripts\deactivate    //to deactivate virtual environment
+cls
+pip install django	//to intall django
+cls
+django-admin startproject devsearch	//name our django project as 'devsearch'
+cd devsearch
+python manage.py runserver        //to run the server
+press ctrl + c   	//to turn off the server
+
+__________________________________VS Code Terminal
+python manage.py startapp projects  	  // create a folder/ app in django folder named projects
+python manage.py runserver    //to run the server
+python manage.py makemigrations 
+python manage.py createsuperuser
+python manage.py help
+python manage.py migrate
+___________________________________Query of the projects we created
+python manage.py shell    
+from projects.models import Project
+projects = Project.objects.all()
+print(projects)	   //query of the projects
+projectObj = Project.objects.get(title  = "Portfolio Website")
+print(projectObj)
+print(projectObj.title)
+print(projectObj.created)
+projects = Project.objects.filter(title__startswith = "po")
+print(projects)
+projects = Project.objects.filter(title__startswith = "p")
+print(projects)
+projects = Project.objects.filter(vote_ratio__gte = 50)
+print(projects)
+projects = Project.objects.filter(vote_ratio__lte = 50)
+print(projects)
+projects = Project.objects.get(title="Ecommerce Website")
+print(projects)
+print(projects.review_set.all())
+print(projects.tags.all())
+pip install pillow
+python -m pip install pillow
+python manage.py collectstatic  //run this command consicutively twice
+pip install whitenoise
+______________________________Update the Projects
+{% extends 'main.html' %}	//go to projects>Templates>projects.html    
+{% block content %}		//add in the code to edit, delete, view the projects from website
+
+<table>
+    
+    {% for project in projects %}
+        <tr>
+            
+            <td><a href="{% url 'update-project' project.id %}">Edit</a></td>
+            <td><a href="{% url 'delete-project' project.id %}">Delete</a></td>
+            <td><a href="{% url 'project' project.id %}">View</a></td>
+        </tr>
+    {% endfor %}
+</table>
+_______________________________
+python manage.py startapp users
+
+
+______________________________
+short intro:
+I am Sadia Zamal. I am a student of East West University. I am from CSE department. My batch is spring 2019. I am passionate about web development. I learned HTML, CSS, python, JavaScript, django, SQLite etc to make this project. I want to be a full stack developer. This is a project of CSE 412 course.
+
+______________________________Django Aministration
+Username/Superuser name: sadiazamal
+Password: akhterselina1x
+_____________________________
+Username: fariakhan
+Password: akhterselina1x
+_______________________________
+Username: asfatjaman
+Password: akhterselina1x
+________________________________
+Username: anisurrahman
+Password: akhterselina2x
+________________________________
+Username: sampiper
+Password: zamalsadia1x
+________________________________
+Username: dennisivy
+Password: zamalsadia1x
+________________________________
+Username: tahiyakabir
+Password: zamalsadia1x
+________________________________
+Username: selinaakhter
+Password: zamalsadia1x
+_____________________________
+facebook: https://www.facebook.com/sadia.zamal.3/
+github: https://github.com/sadiazamal123
+linkedin: https://www.linkedin.com/in/sadia-zamal-a3167b183/
+twitter: https://twitter.com/SadiaZamal
+_______________________________________________
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+ls->dir
+________________Unit Test
+python manage.py test
+_______________________________Debugg
+print("Hi from" + str(self))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
