@@ -72,8 +72,7 @@ python manage.py startapp users
 
 ______________________________
 short intro:
-I am Sadia Zamal. I am a student of East West University. I am from CSE department. My batch is spring 2019. I am passionate about web development. I learned HTML, CSS, python, JavaScript, django, SQLite etc to make this project. I want to be a full stack developer. This is a project of CSE 412 course.
-
+I am Sadia Zamal. I am a student of Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 ______________________________Django Aministration
 Username/Superuser name: sadiazamal
 Password: akhterselina1x
@@ -104,8 +103,6 @@ github: https://github.com/sadiazamal123
 linkedin: https://www.linkedin.com/in/sadia-zamal-a3167b183/
 twitter: https://twitter.com/SadiaZamal
 _______________________________________________
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
 ls->dir
 ________________Unit Test
 python manage.py test
